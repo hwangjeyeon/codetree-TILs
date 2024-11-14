@@ -37,10 +37,10 @@ public class Main {
                     int[] pos = list.get(j);
                     pos[1] = (pos[1] + b)%n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -52,10 +52,10 @@ public class Main {
                     pos[0] = (pos[0] - b) % n;
                     pos[1] = (pos[1] + b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -66,10 +66,10 @@ public class Main {
                     int[] pos = list.get(j);
                     pos[0] = (pos[0] - b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -81,10 +81,10 @@ public class Main {
                     pos[0] = (pos[0] - b) % n;
                     pos[1] = (pos[1] - b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -95,10 +95,10 @@ public class Main {
                     int[] pos = list.get(j);
                     pos[1] = (pos[1] - b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -110,10 +110,10 @@ public class Main {
                     pos[0] = (pos[0] + b) % n;
                     pos[1] = (pos[1] - b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -124,11 +124,11 @@ public class Main {
                     int[] pos = list.get(j);
                     pos[0] = (pos[0] + b) % n;  
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
-                    }     
+                        pos[1] = n  + pos[1];
+                    }   
                     arr[pos[0]][pos[1]]++;      
                     list.add(new int[]{pos[0],pos[1]});       
                 }
@@ -139,10 +139,10 @@ public class Main {
                     pos[0] = (pos[0] + b) % n;                
                     pos[1] = (pos[1] + b) % n;
                     if(pos[0] < 0){
-                        pos[0] *= -1;
+                        pos[0] = n  + pos[0];
                     }
                     if(pos[1] < 0){
-                        pos[1] *= -1;
+                        pos[1] = n  + pos[1];
                     }
                     arr[pos[0]][pos[1]]++;
                     list.add(new int[]{pos[0],pos[1]});
@@ -179,6 +179,7 @@ public class Main {
             //     }
             //     System.out.println();
             // }
+            // System.out.println();
 
             // 특수 영양제 위치 변경
             for(int j=0; j<n; j++){
