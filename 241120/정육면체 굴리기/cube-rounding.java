@@ -10,8 +10,8 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        int x = Integer.parseInt(st.nextToken());
         int y = Integer.parseInt(st.nextToken());
+        int x = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
         int[][] arr = new int[n][m];
         for(int i=0; i<n; i++){
@@ -25,7 +25,7 @@ public class Main {
             int dir = Integer.parseInt(st.nextToken())-1;
             int ny = y + dy[dir];
             int nx = x + dx[dir];
-            
+            // System.out.println(ny + " " + nx);
             if(ny >=0 && ny < n && nx >=0 && nx < m){
                 y = ny;
                 x = nx;
